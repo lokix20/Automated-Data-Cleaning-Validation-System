@@ -1,0 +1,86 @@
+{
+    "dataset_name": "HR Employee Dataset",
+    "rows": 1015,
+    "columns": 13,
+    "fields": [
+        {
+            "name": "employee_id",
+            "semantic_type": "ID",
+            "pii": false
+        },
+        {
+            "name": "name",
+            "semantic_type": "TEXT",
+            "pii": true
+        },
+        {
+            "name": "email",
+            "semantic_type": "EMAIL",
+            "pii": true,
+            "expected_format": "valid email address"
+        },
+        {
+            "name": "phone",
+            "semantic_type": "PHONE",
+            "pii": true,
+            "expected_format": "Indian phone number"
+        },
+        {
+            "name": "department",
+            "semantic_type": "TEXT",
+            "pii": false
+        },
+        {
+            "name": "job_title",
+            "semantic_type": "TEXT",
+            "pii": false
+        },
+        {
+            "name": "salary",
+            "semantic_type": "NUMERIC",
+            "pii": false,
+            "expected_range": {
+                "min": 0
+            }
+        },
+        {
+            "name": "performance_score",
+            "semantic_type": "NUMERIC",
+            "pii": false,
+            "expected_range": {
+                "min": 1,
+                "max": 5
+            }
+        },
+        {
+            "name": "hire_date",
+            "semantic_type": "DATE",
+            "pii": false,
+            "expected_format": "valid date"
+        },
+        {
+            "name": "termination_date",
+            "semantic_type": "DATE",
+            "pii": false,
+            "expected_format": "valid date"
+        },
+        {
+            "name": "absenteeism_days",
+            "semantic_type": "NUMERIC",
+            "pii": false,
+            "expected_range": {
+                "min": 0
+            }
+        },
+        {
+            "name": "city",
+            "semantic_type": "TEXT",
+            "pii": false
+        },
+        {
+            "name": "postcode",
+            "semantic_type": "TEXT",
+            "pii": false
+        }
+    ]
+}
